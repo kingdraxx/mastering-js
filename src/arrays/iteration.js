@@ -1,5 +1,5 @@
 /**
- * TASK: Given an array of integers from [0, N], write a function
+ * TASK: Given an array of N integers, write a function
  * that returns the total number of integers divisible by 2
  */
 
@@ -7,10 +7,18 @@
  * Calculates total number of integers divisible by two
  * @param {number[]} A
  */
+// A = [1,3,3,3,2,2,1,4,8,8,]
 function solution(A) {
   // todo: implement function here
+  let integers = 0;
 
-  return 0;
+  for (let i = 0; i < A.length; i++) {
+    if (A[i] % 2 === 0) {
+      integers++;
+    }
+  }
+
+  return integers;
 }
 
 function main() {

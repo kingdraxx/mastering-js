@@ -12,14 +12,20 @@
  */
 function solution1(A) {
   // todo: implement function here
+  let integers = 0;
 
-  return [];
+  for (let i = 0; i < A.length; i++) {
+    if (A[i] % 2 === 0) {
+      integers++;
+    }
+  }
+  return [integers];
 }
 
 /**
  * TASK 2: Given an array of integers from [0, N], write a function
  * that returns the smallest missing integer. For example, given an array:
- * A = [1,3,2,5,6,-1,0,8], the function should return 4
+ * A = [1,83,2,5,6,-1,0,8], the function should return 4
  */
 
 /**
